@@ -1,0 +1,6 @@
+# Dependencies needed to run this application
+Django==1.9
+argparse==1.2.1
+pytz==2015.7
+wsgiref==0.1.2
+django-extensions==1.5.9

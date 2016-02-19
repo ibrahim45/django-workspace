@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.post("http://localhost:5000/",
+        { 
+          name: $('#firstname').val(),
+          email: $('#email').val(),
+          content: $('#content').val(),
+
+        },
+        function(data,status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
+</script>
+</head>
+<body>
+<form action="" method="post">
+<input id="firstname" type ="text" name="firstname">
+<input id="email" type ="text" name="email">
+<input id="content" type ="text" name="subject">
+<button type="submit">Send an HTTP POST request to a page and get the result back</button>
+</form>
+</body>
+</html>

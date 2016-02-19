@@ -1,0 +1,17 @@
+{#{% load bootstrap_dynamic_formsets %}#}
+{#{% bootstrap_dynamic_formset formset %}#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form method="post" action="">
+
+{#    {% bootstrap_dynamic_formset formset can_order=True can_delete=True layout="horizontal" %}#}
+    {{ formset }}
+    <input type="submit" id="form-submit">
+</form>
+</body>
+</html>
